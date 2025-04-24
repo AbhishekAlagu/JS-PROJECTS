@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>CASIO</h1>
+        <input id="input" readonly type="text">
+        <div class="buttons">
+            <button onclick="clearinput()"> AC </button>
+            <button onclick="deleteelement()"> DEL </button>
+            <button class="operator" onclick="appendToDisplay('%')"> % </button>
+            <button class="operator" onclick="appendToDisplay('/')"> / </button>
+            <button onclick="appendToDisplay('7')"> 7 </button>
+            <button onclick="appendToDisplay('8')"> 8 </button>
+            <button onclick="appendToDisplay('9')"> 9 </button>
+            <button class="operator" onclick="appendToDisplay('*')"> * </button>
+            <button onclick="appendToDisplay('4')"> 4 </button>
+            <button onclick="appendToDisplay('5')"> 5</button>
+            <button onclick="appendToDisplay('6')"> 6 </button>
+            <button class="operator" onclick="appendToDisplay('-')"> - </button>
+            <button onclick="appendToDisplay('1')"> 1 </button>
+            <button onclick="appendToDisplay('2')"> 2 </button>
+            <button onclick="appendToDisplay('3')"> 3 </button>
+            <button class="operator" onclick="appendToDisplay('+')"> + </button>
+            <button onclick="appendToDisplay('.')" class="item1"> . </button>
+            <button onclick="appendToDisplay('0')" class="item2">0</button>
+            <button onclick="calculate()" class="item3">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

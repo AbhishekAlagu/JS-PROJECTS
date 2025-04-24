@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background-color: black;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 8px;
+}
+#input {
+  margin: 10px;
+  width: 80%;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+.buttons button {
+  padding: 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: azure;
+  color: black;
+}
+
+.buttons .item2 {
+  grid-column: 2 / span 2;
+}
+.buttons .operator:hover {
+  background-color: coral;
+}
